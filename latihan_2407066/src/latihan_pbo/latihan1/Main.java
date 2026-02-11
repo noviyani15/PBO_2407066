@@ -1,5 +1,7 @@
 package latihan_pbo.latihan1;
 
+//import java.util.Scanner;
+
 class Cafe{
     String nama;
     String alamat;
@@ -13,8 +15,24 @@ class Cafe{
 
     // method
     void buka(){
-    System.out.println("Cafe" + nama + "Sudah buka");
+    System.out.println("Cafe " + nama + " Sudah buka ");
 }
+    public String getNama(){
+        return nama;
+    }
+
+    public void setNama(String nama){
+        this.nama = nama;
+        //this.alamat = alamat;
+    }
+
+    public String getAlamat() {
+        return alamat;
+    }
+
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
 }
 
 // constructor
@@ -22,8 +40,18 @@ class Cafe{
 public class Main {
     public static void main(String[] args) {
 
+        //Scanner input = new Scanner(System.in);
+        //Cafe cafe = new Cafe();
+
+        //System.out.println("Masukan nama cafe: ");
+        //cafe.nama = input.nextLine();
+
+        //System.out.println("nama yang diinput adalah : " + cafe.nama);
+        //cafe.buka();
+
         // Cafe cafe1 = new Cafe();
         Cafe cafe5 = new Cafe( "Halaman", "Indramayu");
+        cafe5.setNama("Ryu");
         cafe5.buka();
         // cafe1.nama = "Kopi Kenangan";
         // cafe1.alamat = "Indramayu";
