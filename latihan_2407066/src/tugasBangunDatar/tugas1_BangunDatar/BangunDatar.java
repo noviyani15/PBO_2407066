@@ -8,6 +8,7 @@ public class BangunDatar {
     private double tinggi;
     private double diagonal1;
     private double diagonal2;
+    
 
     public void setPersegi(double sisi){
         this.sisi = sisi;
